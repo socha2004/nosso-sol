@@ -109,3 +109,15 @@ label{
         height: auto;
     }
 }
+
+@media (max-width: 768px) {
+    .filho-1 {
+        height: 0px;
+        margin: 10px;
+    }
+
+    .logo-nosso-sol {
+        height: 0px;
+        margin: 10px;
+    }
+}
