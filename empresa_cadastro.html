@@ -15,9 +15,9 @@
             <h1 class="title">Cadastro da Empresa</h1>
             <h2 class="sub-title">Preencha com suas informações</h2>
 
-            <form action="POST" class="formulario-cadastro">
+            <form action="" class="formulario-cadastro">
                 <!-- <label for="nome">Nome da Empresa:</label> -->
-                <input type="text" name="nome" id="nome" class="input-camp" placeholder="Nome da empresa:">
+                <input type="text" name="nome" id="nome" class="input-camp" placeholder="Nome da empresa:" pattern="[a-zA-Z0-9]+">
 
                 <!-- <label for="cnpj">CNPJ:</label> -->
                 <input type="text" name="cnpj" id="cnpj" class="input-camp" placeholder="CNPJ:">
@@ -33,9 +33,10 @@
 
                 <input type="text" name="csenha" id="confirma_senha" class="input-camp" placeholder="Confirme a senha:">
 
-                <input type="submit" value="Inscrever" class="submit-button">
+                <input type="submit" value="Inscrever" class="submit-button" id="submit-button" onsubmit="enviar()">
             </form>
         </div>
     </div>
+    <script src="js/index.js"></script>
 </body>
 </html>
