@@ -15,25 +15,25 @@
             <h1 class="title">Cadastro da Empresa</h1>
             <h2 class="sub-title">Preencha com suas informações</h2>
 
-            <form action="" class="formulario-cadastro">
+            <form action="" class="formulario-cadastro" onsubmit="verificaIgualdade()">
                 <!-- <label for="nome">Nome da Empresa:</label> -->
-                <input type="text" name="nome" id="nome" class="input-camp" placeholder="Nome da empresa:" pattern="[a-zA-Z0-9]+">
+                <input type="text" name="nome" id="nome" class="input-camp" placeholder="Nome da empresa:" onkeypress="return apenasLetras(event)" required>
 
                 <!-- <label for="cnpj">CNPJ:</label> -->
-                <input type="text" name="cnpj" id="cnpj" class="input-camp" placeholder="CNPJ:">
+                <input type="text" name="cnpj" id="cnpj" class="input-camp" placeholder="CNPJ:" oninput="formatarInputCNPJ()" maxlength="18" required>
 
                 <!-- <label for="rsocial">Razão Social:</label> -->
-                <input type="text" name="rsocial" id="rsocial" class="input-camp" placeholder="Razão Social:">
+                <input type="text" name="rsocial" id="rsocial" class="input-camp" placeholder="Razão Social:" required>
 
                 <!-- <label for="endereco">Endereço:</label>  -->
-                <input type="text" name="endereco" id="endereco" class="input-camp" placeholder="Endereço:">
+                <input type="text" name="endereco" id="endereco" class="input-camp" placeholder="Endereço:" required>
 
                 <!-- <label for="odados">Outros Dados:</label> -->
-                <input type="text" name="senha" id="senha" class="input-camp" placeholder="Crie uma senha:">
+                <input type="password" name="senha" id="senha" class="input-camp" placeholder="Crie uma senha:" required>
 
-                <input type="text" name="csenha" id="confirma_senha" class="input-camp" placeholder="Confirme a senha:">
+                <input type="password" name="csenha" id="confirma_senha" class="input-camp" placeholder="Confirme a senha:" required>
 
-                <input type="submit" value="Inscrever" class="submit-button" id="submit-button" onsubmit="enviar()">
+                <input type="submit" value="Inscrever" class="submit-button" id="submit-button" >
             </form>
         </div>
     </div>
